@@ -38,7 +38,7 @@ def parse_args():
     
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="/home/baha/codes/DDRNET/experiments/cityscapes/ddrnet23_slim.yaml",
+                        default="/content/gdrive/MyDrive/Colab_Notebooks/ddrnet/ddrnet23_slim_colab.yml",
                         type=str)
     parser.add_argument('--seed', type=int, default=304)
     parser.add_argument("--local_rank", type=int, default=-1)       
