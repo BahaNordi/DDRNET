@@ -12,7 +12,7 @@ import torch
 from torch.nn import functional as F
 from torch.utils import data
 
-from config import config
+from tools.lib.config import config
 
 
 class BaseDataset(data.Dataset):
