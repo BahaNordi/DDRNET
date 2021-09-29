@@ -10,14 +10,14 @@ PRINT_FREQ: 10
 
 DATASET:
   DATASET: cityscapes
-  ROOT: data/
-  TEST_SET: '/home/baha/codes/DDRNET/data/list/cityscapes/val.lst'
-  TRAIN_SET: '/home/baha/codes/DDRNET/data/list/cityscapes/train.lst'
+  ROOT: /home
+  TEST_SET: '/baha/codes/DDRNET/data/list/cityscapes/val.lst'
+  TRAIN_SET: '/baha/codes/DDRNET/data/list/cityscapes/train.lst'
   NUM_CLASSES: 19
 MODEL:
   NAME: ddrnet_23_slim
   NUM_OUTPUTS: 2
-  PRETRAINED: "home/baha/codes/DDRNET/pretrained_models/DDRNet23s_imagenet.pth"
+  PRETRAINED: "/home/baha/codes/DDRNET/pretrained_models/DDRNet23s_imagenet.pth"
   ALIGN_CORNERS: false
 LOSS:
   USE_OHEM: true
