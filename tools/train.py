@@ -33,12 +33,13 @@ from core.function import train, validate
 from utils.modelsummary import get_model_summary
 from utils.utils import create_logger, FullModel
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description='Train segmentation network')
     
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="/home/baha/codes/DDRNET/experiments/cityscapes/ddrnet23_slim_colab.yml",
+                        default="/content/gdrive/MyDrive/Colab_Notebooks/ddrnet/ddrnet23_slim_colab.yml",
                         type=str)
     parser.add_argument('--seed', type=int, default=304)
     parser.add_argument("--local_rank", type=int, default=-1)       

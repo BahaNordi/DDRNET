@@ -35,7 +35,7 @@ def parse_args():
     
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="experiments/cityscapes/ddrnet23_slim_colab.yml",
+                        default="/content/gdrive/MyDrive/Colab_Notebooks/ddrnet/ddrnet23_slim_colab.yml",
                         type=str)
     parser.add_argument('opts',
                         help="Modify config options using the command-line",
