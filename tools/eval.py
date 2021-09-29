@@ -46,8 +46,8 @@ def parse_args():
     args, unknown = parser.parse_known_args()
     update_config(config, args)
 
-
     return args
+
 
 def main():
     args = parse_args()

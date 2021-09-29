@@ -48,11 +48,13 @@ def parse_args():
                         default=None,
                         nargs=argparse.REMAINDER)
 
+refor    parser.add_argument()
     # args = parser.parse_args()
     args, unknown = parser.parse_known_args()
     update_config(config, args)
 
     return args
+
 
 def get_sampler(dataset):
     from utils.distributed import is_distributed
@@ -61,6 +63,7 @@ def get_sampler(dataset):
         return DistributedSampler(dataset)
     else:
         return None
+
 
 def main():
     args = parse_args()
