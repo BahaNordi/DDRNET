@@ -111,7 +111,7 @@ def main():
         models_dst_dir = os.path.join(final_output_dir, 'models')
         if os.path.exists(models_dst_dir):
             shutil.rmtree(models_dst_dir)
-        shutil.copytree(os.path.join(this_dir, '../lib/models'), models_dst_dir)
+        shutil.copytree(os.path.join(this_dir, '../myib/models'), models_dst_dir)
 
     if distributed:
         batch_size = config.TRAIN.BATCH_SIZE_PER_GPU
