@@ -21,7 +21,7 @@ import torch
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
 
-import _init_paths
+from DDRNET.tools import _init_paths
 import models
 import datasets
 from config import config
@@ -35,7 +35,7 @@ def parse_args():
     
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="experiments/cityscapes/ddrnet23_slim.yaml",
+                        default="experiments/cityscapes/ddrnet23_slim_colab.yml",
                         type=str)
     parser.add_argument('opts',
                         help="Modify config options using the command-line",
