@@ -23,7 +23,7 @@ import torch.backends.cudnn as cudnn
 import torch.optim
 from tensorboardX import SummaryWriter
 
-import _init_paths
+from tools import _init_paths
 import models
 import datasets
 from config import config
