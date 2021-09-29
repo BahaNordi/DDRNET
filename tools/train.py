@@ -39,7 +39,8 @@ def parse_args():
     
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="/content/gdrive/MyDrive/Colab_Notebooks/ddrnet/ddrnet23_slim_colab.yml",
+                        # default="/content/gdrive/MyDrive/Colab_Notebooks/ddrnet/ddrnet23_slim_colab.yml",
+                        required=True,
                         type=str)
     parser.add_argument('--seed', type=int, default=304)
     parser.add_argument("--local_rank", type=int, default=-1)       
@@ -49,7 +50,9 @@ def parse_args():
                         nargs=argparse.REMAINDER)
 
     # args = parser.parse_args()
-    args, unknown = parser.parse_known_args()
+    # args, unknown = parser.parse_known_args()
+    args = parser.parse_args(["--cfg",
+                              "/content/gdrive/MyDrive/Colab_Notebooks/ddrnet/ddrnet23_slim_colab.yml"])
     update_config(config, args)
 
     return args
