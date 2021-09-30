@@ -59,9 +59,9 @@ _C.DATASET.MODEL = 'train'
 _C.DATASET.ROOT = ''
 _C.DATASET.DATASET = 'cityscapes'
 _C.DATASET.NUM_CLASSES = 19
-_C.DATASET.TRAIN_SET = '/home/baha/codes/DDRNET/data/list/cityscapes/train.lst'
+_C.DATASET.TRAIN_SET = '/content/gdrive/MyDrive/Colab_Notebooks/hrnet/data/train.lst'
 _C.DATASET.EXTRA_TRAIN_SET = ''
-_C.DATASET.TEST_SET = '/home/baha/codes/DDRNET/data/list/cityscapes/val.lst'
+_C.DATASET.TEST_SET = '/content/gdrive/MyDrive/Colab_Notebooks/hrnet/data/val.lst'
 
 # training
 _C.TRAIN = CN()
